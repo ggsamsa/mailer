@@ -1,8 +1,10 @@
 #!/bin/bash
+# CHANGE THESE VALUES
 subject="subject"
 from="Renato Lopes <renato@renato.com>"
 html="body.html"
 emails="contacts.txt"
+#
 
 send_email()
 {
@@ -15,7 +17,7 @@ send_email()
 		echo "From: "$from
 		echo "To: "$1
 		echo "MIME-Version: 1.0"
-		echo "Subject: "$assunto
+		echo "Subject: "$subject
 		echo "Content-Type: text/html"
 		echo "Content-Disposition: inline"
 		cat $CONTENT
